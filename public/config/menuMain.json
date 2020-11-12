@@ -7,7 +7,7 @@
   },  
   {
     "id": 1,
-    "icon": "fa fa-file-text",
+    "icon": "fa fa-play-circle",
     "slug": "generacion_ideas",
     "title": "1. Generación de ideas",    
     "path": "pages/tema-1.html", 
@@ -58,7 +58,7 @@
   },
   {
     "id": 2,
-    "icon": "fa fa-file-text",
+    "icon": "fa fa-play-circle",
     "slug": "esquemas_narracion",
     "title": "2. Esquemas de narración",    
     "path": "pages/tema-2.html",
@@ -79,14 +79,14 @@
   },
   {
     "id": 3,
-    "icon": "fa fa-file-text",
+    "icon": "fa fa-play-circle",
     "slug": "creacion_personajes",
     "title": "3. Creación y diseño de personajes",    
     "path": "pages/tema-3.html"    
   },  
   {
     "id": 4,
-    "icon": "fa fa-file-text",
+    "icon": "fa fa-play-circle",
     "slug": "guion",
     "title": "4. Guion",    
     "path": "pages/tema-4.html",
