@@ -1,0 +1,1044 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <title>Guion</title>
+        <meta meta name="description" content="Equipo de Ecosistema de recursos educativos SENA encargado del desarrollo y rediseño de cursos virtuales de aprendizaje para el SENA.">
+        <link rel="icon" type="image/svg+xml" href="assets/images/logos/senaLogo.svg">
+        <link rel="stylesheet" href="assets/fonts/feather/feather.css">
+        <link rel="stylesheet" href="assets/fonts/fontawesome/css/font-awesome.css">
+        <link href="assets/css/fancybox.css" rel="stylesheet">
+        <link href="assets/css/animate.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body class="theme-dark page-header-textura" id="page-home">
+        <header class="curso-presentacion page-header" id="CursoPresentacion">
+            <div class="page-textura">
+                <div class="container">
+                    <div class="curso-topbar justify-content-center justify-content-md-between"><a class="curso-topbar__logo"><svg xmlns="http://www.w3.org/2000/svg" width="168.273" height="164.177" viewBox="0 0 168.273 164.177">
+                                <path id="SENA_LOGO" data-name="SENA LOGO" d="M85.349,1a18.09,18.09,0,1,0,18.09,18.09h0A18.1,18.1,0,0,0,85.349,1ZM25.617,42.983a33.722,33.722,0,0,0-9.386,1.024,11.156,11.156,0,0,0-5.12,2.56A5.346,5.346,0,0,0,10.086,52.2c.683,1.707,2.56,2.9,4.608,3.584,4.437,1.536,9.386,1.877,13.994,2.731a5.1,5.1,0,0,1,2.389,1.024,1.369,1.369,0,0,1-.683,2.048,9.146,9.146,0,0,1-5.291.683A8.354,8.354,0,0,1,20.5,61.244a1.962,1.962,0,0,1-.853-2.389H9.233A7.663,7.663,0,0,0,10.6,63.463a7.59,7.59,0,0,0,4.267,2.389A28.541,28.541,0,0,0,23.4,66.876,52.426,52.426,0,0,0,35,66.023a11.043,11.043,0,0,0,5.8-2.9,5.358,5.358,0,0,0-1.365-8.533,21.267,21.267,0,0,0-5.8-2.048c-3.072-.683-5.973-1.024-9.045-1.536a9.114,9.114,0,0,1-3.072-.853,1.226,1.226,0,0,1,0-2.219,9.369,9.369,0,0,1,4.437-.683,10.554,10.554,0,0,1,4.608.853A1.877,1.877,0,0,1,31.59,49.81h9.9a5.669,5.669,0,0,0-1.195-3.584A8.875,8.875,0,0,0,35.515,43.5c-3.584-.341-6.827-.512-9.9-.512Zm21.333.683V67.217H75.792V62.1H57.531V57.489H73.744V52.54H57.531V48.786H75.109v-5.12Zm47.615,0H81.253V67.217H91.322V51.346l13.824,15.872h13.824V43.666H108.9v15.7Zm42.495,0L120.676,67.217h10.581l2.56-4.267H150.2l2.389,4.267h11.776l-15.53-23.551ZM142.35,49.3l5.12,8.533h-10.41ZM.7,74.044l.171,12.8L49,86.673c2.389.512,3.925,2.048,3.413,5.8l-29.7,51.711,9.557,9.045L78.01,74.044Zm91.646,0L137.4,152.89l9.9-8.874L117.433,92.3c-.512-3.584.853-5.291,3.413-5.8l48.127.171V74.044ZM84.837,87.185,42.512,159.546l11.264,5.461,28.159-47.615a4.283,4.283,0,0,1,2.9-1.195,4.681,4.681,0,0,1,3.072,1.195l28.159,47.786,11.605-5.973Z" transform="translate(-0.7 -1)" fill="#FF6B00" />
+                            </svg>
+                        </a><a class="curso-topbar__menubar collapsed btn-menu-responsive d-none" data-toggle="collapse" href="#curso-topbar__nav" aria-expanded="false"><span></span><span></span><span></span></a>
+                        <nav class="curso-topbar__nav collapse show d-none d-md-block" id="curso-topbar__nav">
+                            <ul class="curso-topbar__list">
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#ResultadosAprendizaje"><span class="text-white">Resultados de aprendizaje</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#IndiceTematico"><span class="text-white">Contenidos</span></a></li>
+                                <li class="curso-topbar__item"><a class="curso-topbar__link" href="#Creditos"><span class="text-white">Créditos</span></a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="curso-portada">
+                        <div class="row align-items-center">
+                            <div class="col-12 col-lg-6">
+                                <h3 class="curso-subtitulo" id="curso-titulo-componente">Tecnólogo en animación 3D </h3>
+                                <h1 class="curso-titulo" id="curso-titulo-tema">Guion</h1>
+                                <div class="brand-line-primary"></div>
+                                <p class="curso-descripcion">Crear ideas nuevas y sólidas es una de las labores más complicadas en la creación audiovisual, la inspiración no proviene de un lugar mágico reservado para unos pocos, la realidad requiere de trabajo constante y disciplinado acompañado de mucho consumo cultural, ya que como en cualquier industria es muy complicado crear de la nada.</p>
+                                <p class="curso-descripcion">Por lo anterior, a lo largo de este componente se exploran diversos aspectos orientados a proveer herramientas para alcanzar la inspiración en el proceso de crear historias, desde diversas formas para generar ideas, pasando por las estructuras narrativas y la construcción de personajes, hasta llegar al proceso para escribir un guion.</p>
+                            </div>
+                            <div class="col-12 col-lg-6 text-center">
+                                <div class="d-none d-lg-block"><img class="curso-imagen" src="assets/images/header/header_media.svg" /></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="curso-resultados section bg-base-light" id="ResultadosAprendizaje">
+            <div class="container">
+                <h2> Resultados de <br>aprendizaje</h2>
+                <div class="brand-line-primary"></div>
+                <div class="card resultado-item">
+                    <div class="card-body">
+                        <h5><strong>Cod. 250201022-02</strong></h5>
+                        <p class="mb-0">Desarrollar el <i>storyboard</i> teniendo en cuenta el análisis del guion.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="curso-indice-tematico section" id="IndiceTematico">
+            <div class="container">
+                <h2>Desarrollo de <br>contenidos</h2>
+                <div class="brand-line-primary"></div>
+                <div class="row justify-content-center">
+                    <div class="col-12 col-sm-10">
+                        <div class="card wow flipInX" data-wow-delay=".4s">
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush list my-n3 nav-temas">
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">1</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-1">Generación de ideas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-1">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">2</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-2">Esquemas de narración</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-2">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">3</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-3">Creación y diseño de personajes</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-3">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold">4</span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#tema-4">Guion</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#tema-4">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-sort-alpha-asc"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#glosario">Glosario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#glosario">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-folder-open"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#anexos">Material complementario</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#anexos">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item nav-tema-item">
+                                        <div class="row align-items-center">
+                                            <div class="col-auto">
+                                                <div class="avatar avatar-sm"><span class="nav-tema-item__icon avatar-title font-size-lg bg-secondary-soft rounded-circle text-primary font-weight-bold"> <i class="fa fa-book"></i></span></div>
+                                            </div>
+                                            <div class="col ml-n2"><span class="nav-tema-item__titulo"> <a href="#referencias">Referencias bibliográficas</a></span></div>
+                                            <div class="col-auto"> <a class="btn btn-light nav-tema-item__btn" href="#referencias">Ver más</a></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="mainContent">
+            <div id="tema-1">
+                <div class="container" id="tema_1">
+                    <div class="header-ecored">
+                        <h1>1. Generación de ideas </h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/24Yp0QFbZcQ" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <p class="mb-0">Crear una nueva idea es una de las labores más difíciles que hay, puesto que la inspiración no es algo que llegue espontáneamente en la gran mayoría de los casos, generalmente requiere de trabajo arduo el crear una buena idea; sin embargo, no se puede negar que algunas pocas veces puede llegar mágicamente de la nada, pero para cuando no es el caso, a continuación se proponen algunas metodologías que pueden ayudar a establecer un rumbo efectivo para la creatividad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema1_1">
+                                    <h2>1.1 La Regla del 9</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>John Vorhaus es un guionista de comedia que ha estado activo desde finales de los ochenta y es reconocido entre otras cosas por escribir <i>The comic toolbox</i> y brindar asesoría a <i>Walt Disney Feature Animation</i>.</p>
+                                <p>Vorhaus plantea con la regla del 9 que básicamente de cada 10 ideas que un autor escriba, 9 van a ser malas. La intención de este planteamiento es reforzar la necesidad de un trabajo constante y disciplinado para obtener buenos resultados, pues por absurda o mala que sea una idea es fundamental escribirla de principio a fin para que en algún momento se llegue a desarrollar esa buena idea que merece ser contada.</p>
+                                <p class="mb-0">Lo primordial es perder el miedo al fracaso, ya que este es solo un paso en el proceso creativo y es primordial entender que fracasar está bien y que a base de esfuerzo y aprender de los errores se puede llegar a un resultado óptimo.</p>
+                            </div>
+                        </div>
+                        <div class="jumbotron">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-auto d-flex justify-content-center mb-4 mb-md-0"><img src="assets/images/pages/tema_1/icon_1_1_01.svg" alt="" style="width:120px"></div>
+                                <div class="col">
+                                    <h3 class="text-center text-md-left"><i>The rule of nine: learning to willingly fail</i></h3>
+                                    <p class="mb-0"><i>Vorhaus says, “Depressing? Not really. In fact, the rule of nine turns out to be highly liberating because once you embrace it, you instantly and permanently lose the toxic expectation of succeeding every time. It’s that expectation and the consequent fear of failure that give your ferocious editor power over you. Remove the expectation and you remove the power.”</i></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema1_2">
+                                    <h2>1.2 Asociación libre</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_2_01.svg" alt=""></div>
+                            <div class="col-12">
+                                <p>Hay muchas formas de hacer asociación libre, pero el propósito principal es tomar conceptos de forma aleatoria y asociarlos para empezar a crear ideas por absurdas que estas puedan ser. Lo ideal es utilizar un generador de palabras aleatorias de los tantos que se encuentran en internet y por cada palabra que se obtenga tratar de generar una pequeña historia de manera rápida, vale la pena poner límite de tiempo a la generación de cada historia, pues si no es posible crear algo con alguna palabra esto da una pauta para descartarla y pasar a la siguiente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema1_3">
+                                    <h2>1.3 Poema dadaísta</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_3_01.svg" alt=""></div>
+                            <div class="col-12">
+                                <p>El dadá fue un movimiento cultural fundado en 1916 en Suiza por el poeta y ensayista Hugo Ball, buscaba rebelarse en contra de las convenciones establecidas en las corrientes artísticas, creó para el campo literario un estilo de escritura automática y sin sentido aparente más allá de burlarse de la escritura convencional. Sin embargo, a día de hoy sirve como herramienta para estimular la creatividad, especialmente en momentos de bloqueo creativo.</p>
+                                <p class="mb-0">La técnica consiste básicamente en recortar palabras de un periódico, mezclarlas en una caja o bolsa y empezar a extraerlas para crear un texto, en muchas ocasiones puede generar cosas sin sentido, pero en procura de explorar ideas se puede tener la libertad de ordenar el conjunto de palabras o complementarlo de forma que se obtengan ideas comprensibles.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema1_4">
+                                    <h2>1.4 Silogismos</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-lg-7 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_4_01.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>El silogismo hace uso de deducciones lógicas para construir conceptos, es una forma de razonamiento deductivo en el que se toman dos planteamientos, una premisa mayor o universal y una premisa menor o particular, a partir de estas premisas se genera un nuevo planteamiento que tiene la función de conclusión.</p>
+                                <p class="mb-4">Para empezar, se parte de una premisa mayor que expone una información universal, en segundo lugar, se usa una premisa menor con información específica o puntual para contrastar con la primera, finalmente se obtiene una conclusión originada de una deducción al contrastar la premisa menor con la mayor.</p>
+                                <p>De esta forma se podría obtener los siguiente:</p>
+                            </div>
+                            <div class="col-12 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_1/info_1_4_01.svg" alt=""></div>
+                            <div class="col-12">
+                                <p>Aunque todos saben y aceptan que en la realidad los perros no vuelan, este podría ser el punto de partida de una gran idea, sobre todo para animación donde los límites solo se encuentran en la imaginación.</p>
+                                <p>Vale aclarar que en el sentido filosófico estricto hay una serie de reglas más amplias para evitar llegar a errores en los planteamientos y sus conclusiones, pero como el objetivo es generar un estímulo creativo que permita producir ideas, es válido hacer un uso simplificado del silogismo en procura de la creatividad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema1_5">
+                                    <h2>1.5 Cadáver exquisito</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-7 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_5_01.svg" alt="" sttyle="width:100%"></div>
+                            <div class="col-12">
+                                <p>El cadáver exquisito es una técnica de creación colectiva en la que varias personas intervienen para generar contenido, sea un texto o una imagen, la técnica funciona de la siguiente manera: un primer autor escribe algo ya sea una palabra o una frase en un papel y lo dobla para ocultar lo que escribió, acto seguido el segundo autor sin tener conocimiento del texto que reposa en el fragmento doblado continúa la escritura y dobla nuevamente el papel para ocultar su escrito y así entregárselo a un tercer autor; este proceso se repite con la cantidad de autores presentes y al final se desdobla el papel y se lee el texto resultante.</p>
+                                <p>La técnica se hace de la misma manera para la creación de imágenes, con la diferencia que deben dejarse unas pequeñas líneas de indicio para que los nuevos autores inicien su dibujo desde estas.</p>
+                                <p>La técnica se llama así debido a que la frase originada la primera vez que se jugó fue: <i>«Le cadavre - exquis - boira - le vin - nouveau»</i> (El cadáver exquisito beberá el vino nuevo).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema1_6">
+                                    <h2>1.6 Cartografía social</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_6_01.svg" alt=""></div>
+                            <div class="col-12">
+                                <p>La cartografía social corresponde a una observación del entorno. En términos simples consiste en salir a la calle y explorar en busca de historias mediante la interacción con los individuos, la documentación fotográfica o escrita de forma que se pueda recopilar información que sirva de fuente de ideas.</p>
+                                <p>Una vez realizado el trabajo de campo la idea es generar un mapa donde se plasmen de manera visual las dinámicas sociales identificadas, ubicando los sitios importantes de interacción, como cafés, mercados, sitios de reunión (tiendas) y así mismo los personajes relevantes hallados en cada lugar.</p>
+                                <p>En principio no da una idea como tal, pero sí es una fuente valiosa de información para construir historias interesantes desde las vivencias propias.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema1_7">
+                                    <h2>1.7 Cuaderno de ideas</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 col-md-8 d-flex justify-content-center my-5"><img class="img-fluid" src="assets/images/pages/tema_1/img_1_7_01.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>Una herramienta imprescindible para todo creativo es la libreta de ideas, esta debe convertirse en un acompañante obligatorio para el día a día, pues nunca se sabe en qué lugar se pueden encontrar elementos o situaciones interesantes.</p>
+                                <p>Su funcionamiento es simple, se alimenta momento a momento en base de la observación, ya sea a partir de textos mediante la descripción de una imagen o situación que atrae la atención, dibujos rápidos y sencillos que expresen la idea de lo que se observa o incluso la captura de sueños extraños que se tienen en ocasiones. Toda la información consignada, en este cuaderno o libreta, puede convertirse en una fuente inagotable de ideas para estimular la creatividad.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-2">
+                <div class="container" id="tema_2">
+                    <div class="header-ecored">
+                        <h1>2. Esquemas de narración</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/N9E7YIGP360" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema2_1">
+                                    <h2>2.1 Modelo Aristotélico y el paradigma </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12">
+                                <p>Ambos modelos se pueden contemplar como un mismo tipo de estructura dramática, teniendo en cuenta que tanto el modelo estudiado por el filósofo Aristóteles en su libro “La Poética”, como “El Paradigma” planteado por Syd Field, se basan en la narración de una historia en 3 actos principales: presentación (acto I) , confrontación (acto II) y resolución del conflicto principal (acto III); sin embargo, “El Paradigma” podría entenderse como una extensión del modelo aristotélico, dado que los actos están divididos por puntos argumentales o <i>plot points</i>, los cuales son acontecimientos que cambian radicalmente el sentido de la acción (Baiz, s.f.).</p>
+                            </div>
+                            <div class="col-12 col-md-7 d-flex justify-content-center mt-5 mb-4"><img class="img-fluid" src="assets/images/pages/tema_2/info_2_1_01.svg" alt="" style="width:100%"></div>
+                            <div class="col-12 mb-5">
+                                <p class="text-center"><i>Esquema narrativo en 3 actos por Syd Field. Tomado del libro: El Manual del Guionista (1995).</i></p>
+                            </div>
+                            <div class="col-12">
+                                <p class="mb-0">Para este momento, se analizará brevemente la película animada “Tierra de Osos” de Disney (2003), con el fin de identificar cada uno de los momentos narrativos explicados a continuación:</p>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <div class="col-12 mb-5">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="card">
+                                        <div class="card-header" id="heading1">
+                                            <h2 class="mb-0"><button class="btn btn-link pl-0" type="button" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                                    <h4 class="mb-0 collapsable-title d-flex align-items-center">Planteamiento</h4>
+                                                </button></h2>
+                                        </div>
+                                        <div class="collapse show" id="collapse1" aria-labelledby="heading1" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="mb-3">Es la presentación inicial que permite contextualizar la historia dentro del espacio-tiempo, identificar los personajes y exponer el problema principal. Es bueno responder a las preguntas: ¿quién o quiénes? ¿dónde? ¿cuáles son las circunstancias actuales? El primer <i>plot point</i> que cierra el acto I, puede designarse como conflicto, el cual rompe el equilibrio inicial y constituye el primer punto de giro.</p>
+                                                <p>En Tierra de Osos todo comienza con el ritual de hombría de Kenai (protagonista), el cual desea desesperadamente convertirse en un hombre. Luego aparece un <i>plot point</i>, donde muere su hermano mayor a causa de un incidente con un oso, del cual él es culpable. Esto motiva a Kenai a buscar venganza hasta cegar la vida de un oso, lo que genera un cambio de forma de humano a oso.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading2">
+                                            <h2 class="mb-0"><button class="btn btn-link collapsed pl-0" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                                    <h4 class="mb-0 collapsable-title d-flex align-items-center">Confrontación</h4>
+                                                </button></h2>
+                                        </div>
+                                        <div class="collapse" id="collapse2" aria-labelledby="heading2" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="mb-3">También conocido como el nudo de la historia. Allí se presentan los obstáculos que se oponen a los objetivos del protagonista. Resulta útil preguntarse ¿qué es lo peor que le puede ocurrir al protagonista? ¿qué lo llevaría a un punto de quiebre? Como lo escribe Andrea del Pilar Castillo: “El conflicto constituye el detonante de la historia planteando el problema central que el personaje deberá resolver de una u otra forma al final”. ¿Conseguirá el protagonista su objetivo? (Castillo, 2013). Este desarrollo narrativo aborda una serie de peripecias o situaciones adversas que vienen de repente y afectan directamente al protagonista.</p>
+                                                <p>Kenai convertido en oso, emprende un viaje hacia la montaña donde podrá encontrarse con el espíritu de su hermano Sitka. En este viaje se encuentra con Koda, un osezno que le enseñará el valor del amor y la hermandad. Por otra parte, Tug el otro hermano de Kenai, decide buscar venganza por la pérdida de sus hermanos a manos de un oso. El segundo <i>plot point</i> se da cuando Koda cuenta la historia de cómo su madre lo defendió de un cazador.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-header" id="heading3">
+                                            <h2 class="mb-0"><button class="btn btn-link collapsed pl-0" type="button" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                                    <h4 class="mb-0 collapsable-title d-flex align-items-center">Resolución</h4>
+                                                </button></h2>
+                                        </div>
+                                        <div class="collapse" id="collapse3" aria-labelledby="heading3" data-parent="#accordionExample">
+                                            <div class="card-body">
+                                                <p class="mb-3">Se centra en la solución del problema, pero antes el protagonista deberá enfrentar el conflicto. Durante dicho momento la intensidad dramática llega a su punto más alto, el cual es conocido como clímax. Tras dicho momento, viene el desenlace, que brinda un nuevo equilibrio y el cambio del protagonista después de superar el conflicto (Castillo, 2013). Se debe responder: ¿Cuál es la solución de la historia? ¿el protagonista vive o muere? ¿triunfa o fracasa? (Field, 1995). </p>
+                                                <p class="mb-3">Kenai se enfrenta a su hermano Tug que trata de matarlo. Koda entra en escena para defender a Kenai, pero al estar en peligro el pequeño oso, Kenai lo protege con su vida. Es allí donde todo se resuelve, Kenai vuelve a ser humano y se reencuentran los 3 hermanos. Kenai comprende el significado de su <i>totem</i> y decide cuidar del pequeño Koda, renunciado a su vida como humano, sellando así su ritual de hombría.</p>
+                                                <p>Una película puede tener varios <i>plot points</i> que le ayuden a intensificar el drama. Se pueden manejar 2 en el acto I, más de 10 en el acto II y 1 en el acto III. Sin embargo, para que la historia funcione, se deben tener claros los 4 componentes básicos: inicio, final y los dos <i>plot points</i> (Field, 1995).</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema2_2">
+                                    <h2>2.2 El viaje del héroe </h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12">
+                                <p>Este modelo, también conocido como Monomito, surge del trabajo de Joseph Cambell y más tarde, del escritor hollywoodense Christopher Vogler. Cambell recogió cientos de mitos y leyendas de diferentes culturas y descubrió 17 puntos en común, los cuales plasmó en su libro “El héroe de las mil caras” (1949). Vogler, inspirado por el trabajo de Cambell, escribió el libro “El viaje del escritor”, en el cual adaptó el lenguaje académico de Campbell para la industria del cine (Cubero, 2017). Este arquetipo se compone por 12 etapas:</p>
+                            </div>
+                            <div class="col-12 col-md-8 d-flex justify-content-center mt-5 mb-4"><img class="img-fluid" src="assets/images/pages/tema_2/info_2_2_01.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p class="text-center"><i>Arquetipo el viaje del héroe</i></p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>1</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Mundo ordinario</strong></p>
+                                        <p class="mb-0">Se presenta el héroe, descubriendo sus ambiciones y limitaciones; de igual forma se aprende de su mundo, antes que la aventura comience. Esta etapa busca que el espectador se identifique con el protagonista. Por ejemplo, en Star Wars, se puede observar a Luke Skywalker como granjero en Tatooine. (Voytilla, 1999)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>2</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Llamada a la aventura</strong></p>
+                                        <p class="mb-0">Algo pasa para alterar el mundo del héroe, para amenazar su vida como la conoce. Se pone en marcha la historia y se presenta una aventura o búsqueda que debe emprender el protagonista. En Star Wars, el mensaje traído por los androides de parte de la princesa Leia.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>3</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Rechazo a la llamada</strong></p>
+                                        <p class="mb-0">El protagonista o héroe se resiste al cambio del mundo ordinario, seguramente por sus inseguridades y temores. Se busca mostrar los riesgos y peligros que hacen parte de la aventura. En Star Wars, Luke rechaza el llamado poniendo como excusa su labor en la granja de sus tíos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>4</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Encuentro con el mentor</strong></p>
+                                        <p class="mb-0">Una persona sabia aparece con el fin de convencer al héroe de aceptar el llamado, mostrarle el camino, entrenarlo y brindarle toda la experiencia que necesita para vencer. Obi-Wan y Yoda se convierten en los mentores de Luke.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>5</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Cruzando el umbral</strong></p>
+                                        <p class="mb-0">Finalmente, el héroe está comprometido con la aventura, está preparado para abandonar el mundo ordinario y adentrarse en los riesgos del mundo especial; punto del cual no habrá retorno. Para el ejemplo de Star Wars, Luke acepta el llamado y junto a Obi-Wan llegan al puerto espacial Mos Aisley.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>6</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Pruebas, aliados y enemigos</strong></p>
+                                        <p class="mb-0">Es la iniciación del héroe al nuevo mundo especial al que se ha adentrado. Vive diferentes pruebas, conoce aliados y se enfrenta a sus enemigos. El protagonista tendrá que prepararse por sí solo o pedir mayor entrenamiento a su mentor para lograr sobreponerse a las adversidades. En Star Wars, Luke se encuentra con Han Solo y Chewbacca y tiene la necesidad de ser entrenado por Yoda.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>7</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Acercamiento a la caverna más profunda</strong></p>
+                                        <p class="mb-0">Después de muchas dificultades, el héroe se acerca a la guarida del mal supremo. Es el momento donde el héroe se prepara para la batalla central. Se puede ver en Star Wars, tras la incursión a la Estrella de la Muerte.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>8</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>La gran prueba o la odisea</strong></p>
+                                        <p class="mb-0">El héroe se encuentra cara a cara con su enemigo principal, un momento de vida o muerte, a tal punto que experimenta o causa la muerte. Para Star Wars se tiene el momento donde Luke rescata a la princesa Leia y ve morir a su mentor.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>9</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>La recompensa</strong></p>
+                                        <p class="mb-0">El héroe ha sobrevivido a la muerte y ha vencido sus más grandes temores. Debido a su valeroso acto, adquiere el “elixir” o respuesta al problema que inició la aventura. En Star Wars, la recompensa es “La Fuerza” que adquiere Luke, lo cual será la clave para destruir al Imperio.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>10</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>El camino de vuelta</strong></p>
+                                        <p class="mb-0">El héroe ya ha adquirido el premio, sin embargo, debe escapar de los peligros del mundo especial para volver a casa. En ejemplo de Star Wars, esta fase se une con la fase 8 (La gran prueba), pues una vez Luke rescata a la princesa, deben enfrentarse a muchos enemigos para lograr escapar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>11</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>La resurrección</strong></p>
+                                        <p class="mb-0">Otra prueba donde el héroe se enfrenta a la muerte y debe usar todo lo aprendido. El personaje ya ha cambiado, pues tiene experiencia y ha enfrentado sus miedos. En este punto se puede dar nuevamente una lucha contra el mal supremo, pero ahora va más allá de la vida del héroe, el cual se sacrifica por el bien de otros. Por ejemplo, Luke arriesga su vida en el último intento de destruir La Estrella de la Muerte y lo logra.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__bulletNumber"><span>12</span></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <p class="mb-2"><strong>Volver con el elixir</strong></p>
+                                        <p class="mb-0">El mundo del héroe se salva o él vuelve con el elixir para beneficiar a los suyos en el mundo ordinario. En la mayoría de las historias, esta fase completa el círculo del viaje, donde se restaura el balance en el mundo ordinario y el héroe comienza una nueva vida influenciado por su travesía. Al final, Luke Skywalker en Star Wars, se convierte en Jedi y devuelve el equilibrio a “La Fuerza”. </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hr-divider my-5"></div>
+                        <div class="jumbotron">
+                            <div class="row align-items-center">
+                                <div class="col-12 col-md-auto d-flex justify-content-center mb-4 mb-md-0"><img src="assets/images/pages/tema_1/icon_1_1_01.svg" alt="" style="width:120px"></div>
+                                <div class="col">
+                                    <p class="mb-0">Este arquetipo narrativo, además de ser un viaje físico, es un viaje espiritual, donde el protagonista pasa de la inexperiencia a la destreza, del temor a la seguridad, y del egoísmo al servicio. El objetivo central es el descubrimiento interior del héroe (Cubero, 2017).</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-3">
+                <div class="container" id="tema_3">
+                    <div class="header-ecored">
+                        <h1>3. Creación y diseño de personajes</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/g5_X7IImhiY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                        <div class="row mt-5">
+                            <div class="col-12">
+                                <p class="mb-0">Una buena trama es fundamental para el desarrollo de la historia, pero esto solo puede ser posible si se tienen unos personajes sólidos que permitan que la historia se desenvuelva.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="list">
+                                    <div class="list__item">
+                                        <div class="list__item__icon"><img src="assets/images/icons/icon_duoble_chevron.svg" alt=""></div>
+                                    </div>
+                                    <div class="list__txt">
+                                        <h3>Crear fichas o biografías de personajes</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mb-5">
+                            <div class="col-12">
+                                <p>Es una de las recomendaciones más extendidas en material bibliográfico y cursos del guion, la creación de fichas suele abarcar los aspectos físicos, psicológicos y sociológicos del personaje.</p>
+                                <p>En los aspectos físicos se describen todos aquellos rasgos que dan identidad visual al personaje, elementos como la edad que tiene y que aparenta, estatura, tono de piel, color de ojos, tipo y color de cabello, sexo, complexión, condiciones físicas y cualquier elemento que permita establecer como se ve el personaje.</p>
+                                <p>En los aspectos psicológicos se exploran elementos que definen su comportamiento como su temperamento, el sentir hacia sí mismo, como se ve ante los demás, fortalezas, debilidades, objetivos, sueños, metas, miedos y cualquier otra cosa que hable sobre su actitud hacia la vida como hobbies, en dónde vive, dónde creció, dónde se educó y en general, información que hable de su entorno social.</p>
+                                <p>Es necesario tener en cuenta que toda esta información debe ser relevante y útil para el desarrollo del personaje en la historia y se puede manejar a modo de ficha o como una biografía narrada, lo importante es que con estos datos se construya un personaje profundo que cause interés y tenga elementos para sufrir una transformación durante el transcurso de la historia.</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
+                                    <ol class="carousel-indicators">
+                                        <li class="active" data-target="#carouselExampleIndicators" data-slide-to="0"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                                        <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active"><img class="d-block w-100" src="assets/images/pages/tema_3/slider_3_01.jpg" alt="0"></div>
+                                        <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/tema_3/slider_3_02.jpg" alt="1"></div>
+                                        <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/tema_3/slider_3_03.jpg" alt="2"></div>
+                                        <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/tema_3/slider_3_04.jpg" alt="3"></div>
+                                        <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/tema_3/slider_3_05.jpg" alt="4"></div>
+                                        <div class="carousel-item"><img class="d-block w-100" src="assets/images/pages/tema_3/slider_3_06.jpg" alt="5"></div>
+                                    </div><a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="tema-4">
+                <div class="container" id="tema_4">
+                    <div class="header-ecored">
+                        <h1>4. Guion </h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="embed-responsive embed-responsive-16by9"><iframe class="embed-responsive-item" width="560" height="315" src="https://www.youtube.com/embed/brbK4OcuYoU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""> </iframe></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <p class="mb-0">El guion es un documento escrito donde se consigna la historia haciendo uso de una estructura que la separa en secuencias y escenas determinando los fragmentos narrativos que deben desarrollarse para contarla, contiene primordialmente la descripción de acciones, diálogos y entornos donde sucede la acción, también puede contener elementos que apoyen la historia como uso de sonidos y efectos, pero dado que no hay un único estándar estos últimos aspectos así como otros no contemplados pueden quedar a discreción del guionista.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema4_1">
+                                    <h2>4.1 El guion en la animación</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12 col-md-8 d-flex justify-content-center mt-5 mb-4"><img class="img-fluid" src="assets/images/pages/tema_4/img_4_1_01.svg" alt="" style="width:100%"></div>
+                            <div class="col-12 mb-5">
+                                <p>Al tomar la animación como vehículo para la narración se abre un abanico de posibilidades infinitas, pues, aunque comparte con estas algunas convenciones narrativas, no está supeditada al funcionamiento real del mundo permitiendo plantear panoramas y situaciones que son muy difíciles de crear en el mundo real (o incluso imposibles). Un ejemplo de esto es la película Avatar que aunque no es del género de animación, hace uso de esta para crear su universo, a pesar de que su guion fue concebido desde 1994 para iniciar su rodaje luego de la finalización de Titanic y ser estrenada en 1999, su director James Cameron determinó que la tecnología de la época no le permitiría realizar la visión que tenía para la película, razón por la cual la producción reinicio en 2005 para llegar a su estreno en 2009, causando gran revuelo y convirtiéndose en una de las películas más taquilleras de la historia.</p>
+                                <p>Lo anterior sirve para evidenciar cómo la animación permite contar historias que no serían posibles de otras formas, sin embargo, es muy importante establecer desde el principio la visión que se desea lograr, ahí radica la importancia del guion, aunque no es una camisa de fuerza, si se constituye como una mara que permite trazar un rumbo para la producción.</p>
+                                <p>En concordancia, para establecer una estructura narrativa es importante introducir una serie de elementos contextuales que ayuden a construir las leyes de la historia, aspectos como la ubicación geográfica, la temporalidad, quiénes son los protagonistas, cuánto dura la pieza audiovisual y la historia en sí; pues todos estos factores afectan directamente a la estructura narrativa y brindan herramientas y restricciones para desarrollar el relato y por tanto, hacer buen uso de las posibilidades del género animado.</p>
+                            </div>
+                            <div class="col-12">
+                                <div class="jumbotron">
+                                    <h3 class="text-center mb-0">Componentes</h3>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-9">
+                                <div class="steps">
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>01</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3>Tema</h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p class="mb-3">Escoger una idea para desarrollar una historia a partir de ella, puede ser una tarea difícil, la clave está en reconocer que es una buena idea y que básicamente es aquella que da la posibilidad de contar una historia interesante. Aunque inicialmente parece algo ambiguo, no lo es tanto, ya que pensar en la historia que se puede generar a partir de la idea, permite discernir si la narración puede o no ser atractiva.</p>
+                                        <p>Generalmente las mejores ideas nacen de experiencias, aunque también pueden surgir de conocimientos tanto propios como ajenos que generen el interés suficiente para querer contar algo a partir de ellos. Ya sea un caso u otro, es fundamental tratar de saber todo lo posible sobre ese tema y de esta forma validar los conocimientos y adquirir nuevas perspectivas que contribuyan a plantar unos cimientos fuertes sobre los cuales fundamentar la historia.</p>
+                                    </div>
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>02</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3><i>Logline</i></h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p class="mb-0">El <i>logline</i> es una frase atractiva que busca cautivar la atención de un posible productor, existe dada la escasez de tiempo de los ejecutivos del cine y resume en una o dos oraciones todos los elementos importantes de la obra; mediante el <i>logline</i> se puede validar rápidamente si la historia funciona o no.</p>
+                                    </div>
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>03</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3>Premisa</h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p class="mb-3">La premisa es una proposición concentrada en una frase mediante la cual se afirma o niega algo y presenta una conclusión. Según el autor Lajos Egri “una buena premisa es una sinopsis exacta de su drama” y se compone de 3 partes:</p>
+                                        <p class="mb-3"> En la primera parte presenta al protagonista de la historia, en la segunda se enuncia el conflicto que se va a desarrollar y en la parte final se muestra el desenlace de ese conflicto o la conclusión.</p>
+                                        <p class="mb-3"> Como ejemplo la siguiente podría ser la premisa de Shrek:</p>
+                                        <p>Un ogro se embarca en una aventura para recuperar su hogar y en el proceso descubre el amor. </p>
+                                    </div>
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>04</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3><i>Storyline</i></h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p class="mb-3">En el <i>storyline</i> se presenta el argumento dramático de la historia sintetizado, en él se expone el planteamiento de la historia, el nudo y su desenlace en uno o dos párrafos, esto quiere decir que se añaden más detalles con respecto a la premisa, pero aún falta desarrollo para llegar a convertirse en un guion.</p>
+                                        <p>Para continuar con el ejemplo, el siguiente sería el <i>storyline</i> de Shrek:</p>
+                                        <p class="mb-3">Un ogro gruñón que disfruta vivir en soledad, un día encuentra el pantano donde vive invadido por criaturas de cuentos de hadas desterradas por Lord Farquaad (planteamiento). Al ir el ogro a reclamarle por la invasión a su pantano obtiene el “privilegio” de rescatar una princesa para Lord Farquaad, bajo amenaza de muerte y con la promesa de recuperar su hogar solo para él, tras muchos percances logra llevar a la princesa a Farquaad pero en el camino se enamora de ella aunque cree que no es correspondido (nudo). El ogro se arrepiente de haberla entregado y regresa al reino para interrumpir la boda, para su sorpresa es correspondido y termina casándose con la princesa para vivir felices en su pantano (desenlace).</p>
+                                    </div>
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>05</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3>Argumento</h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p class="mb-4">El siguiente paso para la escritura del guion es el argumento, en él se desarrollan muchos más elementos importantes para la trama de la historia que en el <i>storyline</i>, en este paso se depositan todos los puntos claves de la historia exponiendo la totalidad de la misma, se evidencian los actos, nudos de la trama, puntos de giro y clímax, aún sin detalle a profundidad, pero ya se dilucidan todos los acontecimientos importantes en la historia. Para un largometraje suele tener de 1 a 2 páginas, aunque estas medidas siempre son variables dependiendo del autor y la extensión del audiovisual.</p>
+                                        <div class="row">
+                                            <div class="col-auto"> <a href="https://es.wikipedia.org/wiki/Shrek" target="_blank" style="color:#12263F">
+                                                    <div class="jumbotron bg-white mb-0">
+                                                        <div class="row justify-content-center align-items-center">
+                                                            <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                                            <div class="col">
+                                                                <p class="mb-0"><strong>Ejemplo.</strong> Shrek - Argumento</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>06</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3>Sinopsis</h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p>La sinopsis es un resumen general de la obra, proviene del término latin «synopsis» y significa visión de conjunto, el objetivo de esta es capturar la atención del productor para que se interese en leer el guion y tiene unos parámetros estructurales específicos; su labor de obtener un texto narrativo de corrido, no incluye tecnicismos cinematográficos ni narrativos y se debe escribir en tercera persona haciendo uso de los verbos principales en presente indicativo. Para un largometraje suele tener extensiones de entre dos y cinco páginas.</p>
+                                    </div>
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>07</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3>Escaleta</h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p class="mb-4">La escaleta es un documento donde se encuentra la historia dividida en secuencias y en escenas, sirve para ver la estructura de la historia paso a paso, cada escena lleva un encabezado donde se define la localización y el momento del día donde sucede la acción, luego de este encabezado se describe la acción sin incluir diálogos, este documento es el esqueleto del guion y es punto de partida para el tratamiento.</p>
+                                        <div class="row">
+                                            <div class="col-auto"> <a href="media/documentos/bf-outline.pdf" target="_blank" style="color:#12263F">
+                                                    <div class="jumbotron bg-white mb-0">
+                                                        <div class="row justify-content-center align-items-center">
+                                                            <div class="col-auto"><img src="assets/images/icons/icon_pdf.svg" alt="" style="width:35px"></div>
+                                                            <div class="col">
+                                                                <p class="mb-0"><strong>Ejemplo.</strong> Escaleta de la película Big Fish</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                    <div class="steps__header">
+                                        <div class="steps__header__number">
+                                            <h3>08</h3>
+                                        </div>
+                                        <div class="steps__header__icon"><img src="assets/images/pages/tema_4/steps_icon_01.svg" alt=""></div>
+                                        <div class="steps__header__title">
+                                            <h3>Tratamiento literario</h3>
+                                        </div>
+                                    </div>
+                                    <div class="steps__copy">
+                                        <p class="mb-3">En el tratamiento se integran detalles de acciones y lugares para generar una visualización precisa de la manera en que va a ser presentada la historia en el audiovisual, se debe tener muy en cuenta los puntos establecidos en la estructura dramática, también identificar las diferentes escenas que componen la narración estableciendo dónde y cuándo se realiza la escena, quiénes participan y qué están haciendo.</p>
+                                        <p class="mb-4">A continuación, un ejemplo del tratamiento de la película Avatar en el siguiente link.</p>
+                                        <div class="row">
+                                            <div class="col-auto"> <a href="https://sfy.ru/?script=avatar" target="_blank" style="color:#12263F">
+                                                    <div class="jumbotron bg-white mb-0">
+                                                        <div class="row justify-content-center align-items-center">
+                                                            <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                                            <div class="col">
+                                                                <p class="mb-0"><strong>Ejemplo.</strong> Screenplay Avatar (2009) </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </a></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="header-ecored mt-3" id="tema4_2">
+                                    <h2>4.2 Guion literario</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row justify-content-center mb-5">
+                            <div class="col-12 col-md-8 d-flex justify-content-center mt-5 mb-6"><img class="img-fluid" src="assets/images/pages/tema_4/img_4_2_01.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>El guion literario es el documento que contiene la historia en su versión final, sin que esto quiera decir que solo con seguir el proceso creativo de escritura salga a la primera. Es normal que el guion pase por varios procesos de revisión y reescritura para asegurar que el planteamiento realizado sea coherente, convincente y de calidad, ya que sobre este se desarrollarán todas las etapas siguientes en el proceso de producción y por tanto, se ejecutará la mayor parte del presupuesto.</p>
+                                <p>En el guion se presenta la historia pensada para la pantalla (imágenes y sonidos) sin especificar parámetros técnicos, debido a que estos van en el guion técnico; es decir, se estructura de forma que al momento de su lectura sea fácil de imaginar todo lo que está pasando.</p>
+                            </div>
+                            <div class="col-12 col-md-8 d-flex justify-content-center mt-6 mb-6"><img class="img-fluid" src="assets/images/pages/tema_4/img_4_2_02.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>A lo largo de años de desarrollo de la industria cinematográfica, se han creado una serie de convenciones en cuanto a forma que a día de hoy son prácticamente universales, entre estas se puede encontrar el uso de la fuente ‘Courier New’ a tamaño de 12 puntos y gracias a esto suele coincidir que una página de guion corresponde a aproximadamente un minuto de historia en pantalla, vale aclarar que es una medida orientativa principalmente.</p>
+                                <p>En cada página en la esquina superior derecha se ubica un encabezado con el título de la obra y el número de la página, lo siguiente a definir es el inicio de la secuencia dramática titulada de forma clara y seguido a esto se empezarán a hacer con cada una de las escenas que componen la secuencia.</p>
+                                <p>Cada escena inicia con un encabezado que contiene el número de la escena, la locación y el momento del día de la siguiente manera:</p>
+                            </div>
+                            <div class="col-12 col-md-8 d-flex justify-content-center my-6"><img class="img-fluid" src="assets/images/pages/tema_4/info_4_2_01.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>Bajo el encabezado se escribe la escena iniciando con una descripción breve del escenario y la acción a desarrollar, no se describe nada en pasado ni en futuro, aunque la acción mostrada sea un <i>flashback</i> o un <i>flashforward</i>, siempre se debe redactar en presente, puesto que el guion cuenta lo que se está viendo en la pantalla en el momento y su escritura debe ser sencilla. </p>
+                                <p>Al introducir un personaje se puede añadir una breve descripción del mismo entre paréntesis para la primera vez que aparece y su nombre se debe poner en mayúscula sostenida siempre. </p>
+                                <p>Cuando en hay intervención de diálogos, estos se ponen en posición centrada para diferenciarlos de la acción e inician con el nombre del personaje que los dice, cuando los diálogos son de alguien que no aparece en pantalla se acotan entre paréntesis así (OFF), por ejemplo, el diálogo de alguien en otra habitación. Sin embargo, cuando el diálogo es de una voz en off como en el caso de un narrador se acota con (V.O.) del inglés <i>Voice Over</i>.</p>
+                            </div>
+                            <div class="col-12 col-md-8 d-flex justify-content-center my-6"><img class="img-fluid" src="assets/images/pages/tema_4/img_4_2_03.png" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>Los diálogos son especialmente complejos, razón por la cual se deben pensar muy bien, ya que nada choca más en el espectador que un parlamento que no sea creíble. Esto es algo que se adquiere con la experiencia, pero siempre vale la pena tenerlo presente desde los primeros guiones que se realicen.</p>
+                                <p>En momentos muy concretos se pueden poner anotaciones entre paréntesis bajo el nombre del personaje y sobre el diálogo cuando es necesario que algo sea muy específico, por ejemplo, un diálogo que deba hacerse en una entonación o jerga particular, aunque por norma general depende del director y el actor dar la intención al diálogo.</p>
+                            </div>
+                            <div class="col-12 col-md-8 d-flex justify-content-center my-6"><img class="img-fluid" src="assets/images/pages/tema_4/info_4_2_02.svg" alt="" style="width:100%"></div>
+                            <div class="col-12">
+                                <p>Por último, si es necesario se puede finalizar la escena con la indicación de transiciones, las cuales se usan a la derecha e indican corte o fundido, entre otros. Las transiciones no son imprescindibles, incluso hay muchos guionistas que no las utilizan, pero pueden llegar a servir para enfatizar el punto final de algo, con un fundido a negro, por ejemplo.</p>
+                                <p>A continuación, se presentan 3 ejemplos de guion: Shrek, El laberinto del fauno y Pulp Fiction respectivamente:</p>
+                                <div class="row mt-5">
+                                    <div class="col-auto"> <a href="media/documentos/guion-shrek.pdf" target="_blank" style="color:#12263F">
+                                            <div class="jumbotron mb-0">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                                    <div class="col">
+                                                        <p class="mb-0"><strong>Ejemplo.</strong> Guion Shrek</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-auto"> <a href="media/documentos/guion-El-Laberinto-del-Fauno.pdf" target="_blank" style="color:#12263F">
+                                            <div class="jumbotron mb-0">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                                    <div class="col">
+                                                        <p class="mb-0"><strong>Ejemplo.</strong> Guion - El laberinto del fauno</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                                <div class="row mt-5">
+                                    <div class="col-auto"> <a href="media/documentos/guion-pulp-fiction.pdf" target="_blank" style="color:#12263F">
+                                            <div class="jumbotron mb-0">
+                                                <div class="row justify-content-center align-items-center">
+                                                    <div class="col-auto"><img src="assets/images/icons/icon_www.svg" alt="" style="width:35px"></div>
+                                                    <div class="col">
+                                                        <p class="mb-0"><strong>Ejemplo.</strong> Guion - Pulp fiction</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="glosario">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Glosario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <p><strong class="mr-2">Arquetipo:</strong>modelo o patrón original que sirve como pauta, del cual se derivan otros objetos, ideas o conceptos.</p>
+                        <hr>
+                        <p><strong class="mr-2">Clímax:</strong>es el punto de mayor tensión dramática, después del cual todo se concluye o soluciona.</p>
+                        <hr>
+                        <p><strong class="mr-2"><i>Flashback:</i></strong>es un recurso usado en el cine para mostrar acciones del pasado o recuerdos del personaje.</p>
+                        <hr>
+                        <p><strong class="mr-2"><i>Flashforward:</i></strong>es un recurso usado en el cine para mostrar acciones del futuro.</p>
+                        <hr>
+                        <p><strong class="mr-2">Peripecia: </strong>las peripecias normalmente son situaciones adversas que suceden repentinamente y logran alterar la determinación del personaje central. De esta manera las peripecias cambian la condición en la que se encuentra la historia, pero no consiguen resolver el conflicto; sin embargo, logran acercar al personaje a su meta u objetivo.</p>
+                        <hr>
+                        <p><strong class="mr-2">Punto argumental (<i>plot point</i>): </strong>acontecimiento que cambia radicalmente el sentido de la acción o historia. </p>
+                    </div>
+                </div>
+            </div>
+            <div id="anexos">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Material complementario</h1>
+                    </div>
+                    <div class="jumbotron bg-white">
+                        <table class="table table-bordered table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th class="text-center">Autor, (año del documento o material), Nombre del documento o material.</th>
+                                    <th class="text-center">Tipo de material ( Video, capítulo de libro, articulo, otro) </th>
+                                    <th class="text-center" style="width:150px">Enlace del Recurso o Archivo del documento o material</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Andrew Stanton, (2012), The Clues to a great story.</td>
+                                    <td>Página web</td>
+                                    <td> <a href="https://www.ted.com/talks/andrew_stanton_the_clues_to_a_great_story" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Visitar</a></td>
+                                </tr>
+                                <tr>
+                                    <td>David Esteban Cubero, (2017), Cómo aplicar el viaje del héroe a tu historia.</td>
+                                    <td>Podcast (Blog)</td>
+                                    <td> <a href="https://cursosdeguion.com/55-como-aplicar-viaje-del-heroe/" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Visitar </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Luis Francisco Pérez, (s.f.), Curso cinematográfico.</td>
+                                    <td>Página web</td>
+                                    <td> <a href="https://aprendercine.com/" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Visitar </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Sala 1 - Canal de cine y series, (2017), El Viaje del Héroe.</td>
+                                    <td>Video </td>
+                                    <td> <a href="https://www.youtube.com/watch?v=RF1uKuKCIgE" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Ver </a></td>
+                                </tr>
+                                <tr>
+                                    <td>Sinjania, (2019), 25 cosas en las que pensar antes de crear un personaje.</td>
+                                    <td>Página web </td>
+                                    <td> <a href="https://www.sinjania.com/crear-un-personaje/" target="_blank"><span class="fa fa-download" aria-hidden="true"></span> Visitar</a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div id="referencias">
+                <div class="container">
+                    <div class="header-ecored">
+                        <h1>Referencias bibliográficas</h1>
+                    </div>
+                    <div class="jumbotron bg-white referencias">
+                        <p>Baiz, F. (s.f). Claves para la escritura de un buen guion de cine. Consultado el 28 de agosto de 2020 en:<a class="ml-2" href="https://issuu.com/pedromenesesmontes/docs/claves-para-la-escritura-de-un-buen" target="_blank">https://issuu.com/pedromenesesmontes/docs/claves-para-la-escritura-de-un-buen</a></p>
+                        <hr>
+                        <p>Castillo, A. P. (2013). Estructura dramática.<a class="ml-2" href="https://es.calameo.com/read/004944011fa9360605829" target="_blank">https://es.calameo.com/read/004944011fa9360605829</a></p>
+                        <hr>
+                        <p>Field, S. (1995). El manual del guionista. Plot Ediciones.<a class="ml-2" href="http://www.laescaleta.mx/wp-content/uploads/2017/09/syd-field-el-manual-del-guionista-.pdf" target="_blank">http://www.laescaleta.mx/wp-content/uploads/2017/09/syd-field-el-manual-del-guionista-.pdf</a></p>
+                        <hr>
+                        <p>Voytilla, S. (1999). Myth and the Movies: Discovering the Mythic Structure of 50 Unforgettable Films. Studio City CA, EEUU: Michael Wiese Productions.<a class="ml-2" href="https://www.tlu.ee/~rajaleid/montaazh/Hero%27s%20Journey%20Arch.pdf" target="_blank">https://www.tlu.ee/~rajaleid/montaazh/Hero%27s%20Journey%20Arch.pdf</a></p>
+                        <hr>
+                        <div class="row justify-content-between align-items-center">
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-picture-o fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Fotografías y vectores tomados de <a href="https://www.shutterstock.com/" target="_blank">https://www.shutterstock.com/</a> y <a href="https://www.freepik.es/" target="_blank">https://www.freepik.es/</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5 my-4">
+                                <div class="jumbotron p-4">
+                                    <div class="d-flex justify-content-center align-items-center">
+                                        <p class="text-center pl-4"><i class="fa fa-creative-commons fa-2x text-center"></i></p>
+                                        <p class="text-center flex-grow-1">Licencia Creative Commons <br> <strong>CC BY-NC-SA</strong><br> <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/es/" target="_blank">Ver licencia.</a> </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="Creditos">
+            <div class="container">
+                <h1>Créditos </h1>
+                <div class="brand-line-primary"></div>
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <h3 class="footer-subtitulo mb-4">ECOSISTEMA DE RECURSOS EDUCATIVOS DIGITALES </h3>
+                        <p class="footer-texto mb-2"><strong>Ingry Dayanna Bonilla Monzon </strong><br /> <span class="text-small">Líder del equipo</span></p>
+                    </div>
+                </div>
+                <div class="row mt-5">
+                    <div class="col-12 col-md-6">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Contenido Instruccional
+                        </h4>
+                        <p class="footer-texto mb-2"><strong>Gloria Matilde Lee Mejía </strong><br /> <span class="text-small">Responsable del equipo</span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Comercio y Servicios</span><br><span class="text-small">Regional Tolima</span></p>
+                        <p class="footer-texto mb-2"><strong>Rafael Nelftalí Lizcano Reyes</strong><br /> <span class="text-small">Asesor pedagógico<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander </span></p>
+                        <p class="footer-texto mb-2"><strong>Jhon Alexander García</strong><br />
+                            <strong>Oscar Andrés Martin</strong><br /><span class="text-small">Experto temático<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Servicios y Gestión Empresarial </span><br><span class="text-small">Regional Antioquia</span></p>
+                        <p class="footer-texto mb-2"><strong>Oscar Absalón Guevara</strong><br /> <span class="text-small">Diseñador instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Gestión Industrial</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Andrés Felipe Velandia Espitia</strong><br /> <span class="text-small">Evaluador instruccional<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de Diseño y Metrología</span><br><span class="text-small">Regional Distrito Capital</span></p>
+                        <p class="footer-texto mb-2"><strong>Julieth Paola Vital López</strong><br /> <span class="text-small">Corrección de estilo<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro para la Industria de la Comunicación Gráfica</span><br><span class="text-small">Regional Distrito Capital </span></p>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <h4 class="footer-subtitulo-2 mt-0">
+                            <div class="fa fa-caret-right mr-2"></div>Diseño y desarrollo de recursos educativos digitales
+                        </h4>
+                        <p class="footer-texto"><strong>Francisco José Lizcano Reyes </strong><br /> <span class="text-small">Responsable del equipo<br /></span></p>
+                        <p class="footer-texto"><strong>Leyson Fabián Castaño Pérez</strong><br /> <span class="text-small">Integración de recursos y pruebas<br /></span></p>
+                        <p class="footer-texto"> <strong>Adriana Rincón Avendaño</strong><br />
+                            <strong>Camilo Andrés Villamizar Lizcano</strong><br />
+                            <strong>Daniel Ricardo Mutis Gómez</strong><br>
+                            <strong>José Jaime Luis Tang Pinzón</strong><br />
+                            <strong>Lady Adriana Ariza Luque</strong><br />
+                            <strong>Maria Camila Ovalle Ospina</strong><br />
+                            <strong>Nelson Iván Vera Briceño</strong><br />
+                            <strong>Oleg Litvin</strong><br />
+                            <strong>Yazmin Rocio Figueroa Pacheco</strong><br />
+                            <strong>Yenny patricia Ulloa Villamizar</strong><br />
+                            <strong>Víctor Raúl Cárdenas Cáceres</strong><br /> <span class="text-small">Diseño web & producción audiovisual<br /></span></p>
+                        <p class="footer-texto"><strong>Daniel Ricardo Mutis Gómez</strong><br /> <span class="text-small">Desarrollo front-end<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">CENTRO INDUSTRIAL DEL DISEÑO Y LA MANUFACTURA </span><br><span class="text-small">Regional Santander</span></p>
+                        <h4 class="footer-subtitulo-2 mt-5">
+                            <div class="fa fa-caret-right mr-2"></div>Gestores de repositorio
+                        </h4>
+                        <p class="footer-texto"><strong>Brayan Steven Pinto Díaz</strong><br />
+                            <strong>Edilson Laverde Molina</strong><br />
+                            <strong>Ricardo Alfonso González Vargas</strong><br /> <span class="text-small">Validación de recursos<br /></span></p>
+                        <p class="footer-texto"><span class="text-small text-uppercase">Centro de comercio y servicios </span><br><span class="text-small">Regional Tolima</span></p>
+                    </div>
+                </div>
+                <div class="row justify-content-center align-items-center mt-5"><img src="assets/images/logos/senaLogo.svg" style="max-width:100px"></div>
+            </div>
+        </footer>
+        <section id="cc">
+            <div class="container">
+                <div class="d-flex flex-column flex-sm-row"><span class="pr-3"><i class="icon cc"></i></span><span>Este material puede ser distribuido, copiado y exhibido por terceros si se muestra en los créditos. No se puede obtener ningún beneficio comercial y las obras derivadas tienen que estar bajo los mismos términos de la licencia que el trabajo original.</span></div>
+            </div>
+        </section><a class="scroll-to-top-btn">
+            <div class="fa fa-angle-up fa-2x"></div>
+        </a>
+        <script src="assets/js/vendor.js"></script>
+        <script src="js/local.js"></script>
+    </body>
+</html>
